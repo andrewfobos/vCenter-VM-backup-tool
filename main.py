@@ -201,9 +201,6 @@ def main():
         if VM.name not in noBackupVMs:
             logging.debug("Preparing to backup VM: "+VM.name)
             cloneToTemplate(VM,backupFolder,backupDatastore)
-#    VM = getChildByName(VMs,"VMware vCenter Server Appliance")
-#    print(VM.name)
-#    cloneToTemplate(VM,backupFolder,backupDatastore)
     endtime = datetime.now()-starttime
     logging.info("Execution time: "+str(endtime))
 
